@@ -1,9 +1,8 @@
 import 'dart:collection';
 
 void main(){
-  final list = [1, 2, 3, 4, 5, 6, 7, 8];
-  final UnmodifiableList = UnmodifiableListView(list);
+  final numbers = [1,2,3,4,5];
+  final unmodifiableNumbers = UnmodifiableListView(numbers);
 
-  print(UnmodifiableListView);
-  // error UnmodifiableListView.add(100);
+  unmodifiableNumbers.add(100); // error
 }
